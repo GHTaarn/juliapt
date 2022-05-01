@@ -48,5 +48,13 @@ wget -N ${URLSTEM}/${TARBALL}.asc
 wget -N https://julialang.org/assets/juliareleases.asc
 
 gpg --import juliareleases.asc
-gpg --verify ${TARBALL}.asc ${TARBALL}
+if gpg --verify ${TARBALL}.asc ${TARBALL}
+then
+	echo Successfully downloaded and verified Julia
+else
+	echo Downloaded Julia tar ball does NOT match the signature!
+	# Rename the tarball so that make does not think that it is okay
+	mv $TARBALL unverified-${TARBALL}
+	exit 1
+fi
 
