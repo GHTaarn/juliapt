@@ -50,7 +50,7 @@ make install
 You can also generate .deb files for architectures different than you are on,
 as long as you do not try to install them locally.
 
-# Feedback
+## Feedback
 
 Thank you for your interest in this project. If you have successfully installed
 Julia with juliafromtar, it would be much appreciated if you would make a post
