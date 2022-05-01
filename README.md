@@ -35,7 +35,7 @@ than the one that you built it on.
 ### Other architectures and Julia versions
 
 If you want a non default architecture or Julia version, then before running
-`make` you will need to create the configuratioin file
+`make` you will need to create the configuration file
 `juliafromtar-makefile-customization` and edit it, e.g.:
 
 ```
@@ -47,8 +47,8 @@ make
 make install
 ```
 
-You can also generate .deb files for architectures different than your own as
-long as you do not try to install them.
+You can also generate .deb files for architectures different than you are on,
+as long as you do not try to install them locally.
 
 # Feedback
 
