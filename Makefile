@@ -1,10 +1,13 @@
 PROJNAME=juliafromtar
-JULIAVERSION=1.7.2
 # Output of the arch command
 ARCH=x86_64
 # Used in .deb packages
 DEBARCH=amd64
-DEBJULIAVERSION=$(JULIAVERSION)-1
+DEBJULIAVERSION=1.7.2-1
+
+-include juliafromtar-makefile-customization
+
+JULIAVERSION != echo $(DEBJULIAVERSION) | sed -n 's/-.*//p'
 JULIADIR=julia-$(JULIAVERSION)
 TARFILE=$(JULIADIR)-linux-$(ARCH).tar.gz
 TARGET=$(PROJNAME)_$(DEBJULIAVERSION)_$(DEBARCH).deb
