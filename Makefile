@@ -52,10 +52,13 @@ thoroughclean:
 test: $(TARGET)
 	lintian $(TARGET)
 
+# sudo -k requires that user inputs sudo password so that they are aware that sudo is used
 install: $(TARGET)
+	sudo -k
 	sudo dpkg -i $(TARGET)
 
 uninstall:
+	sudo -k
 	sudo dpkg -r $(PROJNAME)
 
 installtest:
