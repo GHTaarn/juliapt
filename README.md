@@ -63,3 +63,14 @@ https://github.com/GHTaarn/juliafromtar/issues
 Please direct issues related to the Julia language itself to either
 https://discourse.julialang.org or https://github.com/JuliaLang/julia/issues
 
+## Future work
+
+When there is enough positive feedback to make me confident that the quality of
+the .deb files is high enough, then I plan to upload the most popular .deb files
+to Github so that they can be downloaded directly.
+
+Further into the future, it would be nice to have a repository so that people
+can register it in /etc/apt/sources.list and then just install and upgrade with
+`apt` [the way Signal has done](https://signal.org/download/linux/). I'm hoping
+that someone will donate some serverspace for this purpose in the future.
+
