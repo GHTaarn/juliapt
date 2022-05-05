@@ -11,6 +11,16 @@ For many people, installing a .deb file is preferable to manual download and
 installation because the installation, uninstallation and upgrade process
 becomes similar to other software running on the computer.
 
+## Features
+
+ - Minimalistic code that is easy to understand and use
+ - Based on the official .tar.gz file provided at julialang.org (downloads it automatically)
+ - Produces a .deb file that:
+   - is easily installed and uninstalled on Debian based systems
+   - has a full command line version of any chosen version of Julia
+   - creates a Julia launcher in the desktop menu
+   - provides correctly installed man pages for Julia
+ 
 ## Usage
 
 If you want x86_64 architecture and are satisfied with `juliafromtar`s default
@@ -47,7 +57,8 @@ make
 make install
 ```
 
-You can also generate .deb files for architectures different than you are on,
+You can also generate .deb files for architectures different from the one that
+you are on,
 as long as you do not try to install them locally.
 
 ## Feedback
