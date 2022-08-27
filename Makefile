@@ -7,7 +7,7 @@ DEBJULIAVERSION=1.7.3-1
 
 -include juliafromtar-makefile-customization
 
-JULIAVERSION != echo $(DEBJULIAVERSION) | sed -n 's/-.*//p'
+JULIAVERSION != echo $(DEBJULIAVERSION) | sed -n 's/-[0-9].*//p'
 JULIADIR=julia-$(JULIAVERSION)
 TARFILE=$(JULIADIR)-linux-$(ARCH).tar.gz
 TARGET=$(PROJNAME)_$(DEBJULIAVERSION)_$(DEBARCH).deb

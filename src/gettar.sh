@@ -15,7 +15,7 @@ else
 	JULIA_VERSION="$(curl -fsSL https://julialang.org/downloads | grep -oP 'Current stable release: v.{0,8}' | sed -n '{s/^.*release: v//; s/[[:space:]].*//p}')"
 	echo Assuming Julia version $JULIA_VERSION as it is the latest stable version found on julialang.org
 fi
-TRUNCATED_JULIA_VERSION=$(echo $JULIA_VERSION | sed -n '{s/[.][0-9]*$//p}')
+TRUNCATED_JULIA_VERSION=$(echo $JULIA_VERSION | sed -n '{s/[.][^.]*$//p}')
 
 
 
