@@ -34,6 +34,9 @@ then
 elif [ "$ARCH" = "aarch64" ]
 then
 	URLSTEM=https://julialang-s3.julialang.org/bin/linux/${ARCH}/${TRUNCATED_JULIA_VERSION}
+elif [ "$ARCH" = "i686" ]
+then
+	URLSTEM=https://julialang-s3.julialang.org/bin/linux/x86/${TRUNCATED_JULIA_VERSION}
 else
 	echo "Architecture $ARCH is not yet implemented"
 fi
