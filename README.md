@@ -11,6 +11,10 @@ For many people, installing a .deb file is preferable to manual download and
 installation because the installation, uninstallation and upgrade process
 becomes similar to other software running on the computer.
 
+If you do not wish to generate the .deb file yourself, but rather download
+a pre-generated .deb file, then visit the
+[juliafromtar](https://github.com/GHTaarn/juliafromtar) project.
+
 ## Features
 
  - Minimalistic code that is easy to understand and use
@@ -66,22 +70,11 @@ as long as you do not try to install them locally.
 Thank you for your interest in this project. If you have successfully installed
 Julia with juliapt, it would be much appreciated if you would make a post
 about it at https://github.com/GHTaarn/juliapt/discussions mentioning which
-distribution, architecture and versions of Julia and the distribution you used.
+Linux distribution, architecture and versions of Julia you used.
 
 If you have issues related to the packaging, please report them at
 https://github.com/GHTaarn/juliapt/issues
 
 Please direct issues related to the Julia language itself to either
 https://discourse.julialang.org or https://github.com/JuliaLang/julia/issues
-
-## Future work
-
-When there is enough positive feedback to make me confident that the quality of
-the .deb files is high enough, then I plan to upload the most popular .deb files
-to Github so that they can be downloaded directly.
-
-Further into the future, it would be nice to have a repository so that people
-can register it in /etc/apt/sources.list and then just install and upgrade with
-`apt` [the way Signal has done](https://signal.org/download/linux/). I'm hoping
-that someone will donate some serverspace for this purpose in the future.
 
