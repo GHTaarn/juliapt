@@ -1,4 +1,4 @@
-# Julia From Tar
+# Juliapt
 
 This code generates .deb files that contain [Julia](https://julialang.org)
 which can easily be installed on Debian based Linux distributions like Ubuntu,
