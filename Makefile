@@ -1,7 +1,7 @@
 PROJNAME=juliafromtar
-# Output of the arch command
+# Output of the arch command (x86_64, aarch64 or i686)
 ARCH=x86_64
-# Used in .deb packages
+# Used in .deb packages (amd64, arm64 or i386)
 DEBARCH=amd64
 DEBJULIAVERSION=1.8.0-1
 
