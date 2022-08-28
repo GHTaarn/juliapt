@@ -23,12 +23,12 @@ becomes similar to other software running on the computer.
  
 ## Usage
 
-If you want x86_64 architecture and are satisfied with `juliafromtar`s default
+If you want x86_64 architecture and are satisfied with `juliapt`s default
 version of Julia (usually the latest stable version) then you can just execute:
 
 ```
-git clone https://github.com/GHTaarn/juliafromtar
-cd juliafromtar
+git clone https://github.com/GHTaarn/juliapt
+cd juliapt
 make
 make install
 ```
@@ -46,13 +46,13 @@ than the one that you built it on.
 
 If you want a non default architecture or Julia version, then before running
 `make` you will need to create the configuration file
-`juliafromtar-makefile-customization` and edit it, e.g.:
+`juliapt-makefile-customization` and edit it, e.g.:
 
 ```
-git clone https://github.com/GHTaarn/juliafromtar
-cd juliafromtar
-head -7 Makefile > juliafromtar-makefile-customization
-nano juliafromtar-makefile-customization
+git clone https://github.com/GHTaarn/juliapt
+cd juliapt
+head -7 Makefile > juliapt-makefile-customization
+nano juliapt-makefile-customization
 make
 make install
 ```
@@ -64,12 +64,12 @@ as long as you do not try to install them locally.
 ## Feedback
 
 Thank you for your interest in this project. If you have successfully installed
-Julia with juliafromtar, it would be much appreciated if you would make a post
-about it at https://github.com/GHTaarn/juliafromtar/discussions mentioning which
+Julia with juliapt, it would be much appreciated if you would make a post
+about it at https://github.com/GHTaarn/juliapt/discussions mentioning which
 distribution, architecture and versions of Julia and the distribution you used.
 
 If you have issues related to the packaging, please report them at
-https://github.com/GHTaarn/juliafromtar/issues
+https://github.com/GHTaarn/juliapt/issues
 
 Please direct issues related to the Julia language itself to either
 https://discourse.julialang.org or https://github.com/JuliaLang/julia/issues

@@ -5,7 +5,7 @@ ARCH=x86_64
 DEBARCH=amd64
 DEBJULIAVERSION=1.8.0-1
 
--include juliafromtar-makefile-customization
+-include juliapt-makefile-customization
 
 JULIAVERSION != echo $(DEBJULIAVERSION) | sed -n 's/-[0-9].*//p'
 JULIADIR=julia-$(JULIAVERSION)
