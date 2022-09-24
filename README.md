@@ -29,11 +29,11 @@ a pre-generated .deb file, then visit the
 
 A computer running Linux with Debian package management installed and internet access.
 A user with sudo permission.
-The packages: make, fakeroot, gpg, wget, git.
+The packages: make, fakeroot, sed, gzip, gpg, wget, git.
 They can be installed with the command:
 
 ```
-sudo apt install make fakeroot gpg wget git # (if you do not have these packages installed already)
+sudo apt install make fakeroot sed gzip gpg wget git
 ```
 
 ## Usage
