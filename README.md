@@ -24,7 +24,18 @@ a pre-generated .deb file, then visit the
    - has a full command line version of any chosen version of Julia
    - creates a Julia launcher in the desktop menu
    - provides correctly installed man pages for Julia
- 
+
+## Requirements
+
+A computer running Linux with Debian package management installed and internet access.
+A user with sudo permission.
+The packages: make, fakeroot, gpg, wget, git.
+They can be installed with the command:
+
+```
+sudo apt install make fakeroot gpg wget git # (if you do not have these packages installed already)
+```
+
 ## Usage
 
 If you want x86_64 architecture and are satisfied with `juliapt`s default
