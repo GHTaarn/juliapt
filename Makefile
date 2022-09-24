@@ -3,7 +3,7 @@ PROJNAME=juliafromtar
 ARCH=x86_64
 # Used in .deb packages (amd64, arm64 or i386)
 DEBARCH=amd64
-DEBJULIAVERSION=1.8.0-1
+DEBJULIAVERSION=1.8.1-1
 
 -include juliapt-makefile-customization
 
