@@ -1,10 +1,7 @@
-# This script generates the necessary repository files
-# for the .deb files in $reponame/stable and publishes the repo on
-# sourcehut so that this repo can be included in /etc/apt/sources.list
-
-# You should therefore place all .deb files that you wish to publish in
-# $reponame/stable before running this script. The script also requires
-# the sourcehut pages key to be in the sourcehutpages.txt file.
+# This script generates a Debian formatted repository and uploads it to
+# Sourcehut pages. All .deb files in the current directory are included
+# in this repository. The script also requires the sourcehut pages key to be
+# in the srht-pages-key.txt file.
 
 # Note that the total size of all published files must be less than 1Gbyte
 
