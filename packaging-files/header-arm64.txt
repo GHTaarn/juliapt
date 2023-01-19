@@ -1,0 +1,6 @@
+PROJNAME=juliafromtar
+# Output of the arch command
+ARCH=aarch64
+# Used in .deb packages
+DEBARCH=arm64
+

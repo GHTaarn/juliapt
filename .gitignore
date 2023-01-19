@@ -5,4 +5,7 @@ julia*.tar.gz.asc
 juliareleases.asc
 debian
 julia-[0-9].[0-9].[0-9]
+srht-repo
+sourcehutpages.txt
+repo.tar.gz
 

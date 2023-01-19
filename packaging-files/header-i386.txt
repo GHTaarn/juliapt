@@ -1,0 +1,6 @@
+PROJNAME=juliafromtar
+# Output of the arch command
+ARCH=i686
+# Used in .deb packages
+DEBARCH=i386
+
