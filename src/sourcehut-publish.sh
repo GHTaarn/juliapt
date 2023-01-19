@@ -17,7 +17,7 @@ cd $reponame
 dpkg-scanpackages --multiversion stable /dev/null | gzip -9c > stable/Packages.gz
 tar zcvf ../repo.tar.gz stable
 cd ..
-curl --oauth2-bearer `cat sourcehutpages.txt` \
+curl --oauth2-bearer `cat srht-pages-key.txt` \
     -Fcontent=@repo.tar.gz \
     https://pages.sr.ht/publish/taarn.srht.site/juliafromtar
 
