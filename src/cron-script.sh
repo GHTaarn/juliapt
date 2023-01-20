@@ -1,8 +1,11 @@
 #!/bin/bash
+# Optionally add this file to the crontab with "crontab -e"
 
 URL='https://julialang.org/downloads/'
 
 NEW_VERSION=`curl -s $URL | grep -Eo 'Current stable release:\s*v[0-9]+\.[0-9]+\.[0-9]+' | cut -d 'v' -f 2 | head -n 1`
+
+echo
 date
 echo The latest stable version of Julia was determined to be ${NEW_VERSION}
 
