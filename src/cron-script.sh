@@ -22,6 +22,7 @@ else
 fi
 
 # Test that the upload was successful
+# (see src/sourcehut-publish.sh for explanation of srht-url.txt)
 rm -f Packages.gz # Using -f to avoid warning for non-existing file
 wget -nv `cat srht-url.txt`/stable/Packages.gz
 diff Packages.gz srht-repo/stable/Packages.gz

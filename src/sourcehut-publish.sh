@@ -2,6 +2,8 @@
 # Sourcehut pages. All .deb files in the current directory are included
 # in this repository. The script also requires the sourcehut pages key to be
 # in the srht-pages-key.txt file.
+# The file srht-url.txt should contain the base url of the repository on
+# Sourcehut (e.g. create with "echo taarn.srht.site/juliafromtar > srht-url.txt")
 
 # Note that the total size of all published files must be less than 1Gbyte
 
