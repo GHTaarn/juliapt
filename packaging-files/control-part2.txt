@@ -1,10 +1,9 @@
 Section: science
 Priority: optional
-Maintainer: https://github.com/GHTaarn/juliafromtar/issues
-Homepage: https://github.com/GHTaarn/juliafromtar
+Maintainer: https://github.com/GHTaarn/juliapt/issues
+Homepage: https://github.com/GHTaarn/juliapt
 Depends:
 Recommends: git, openssl
-Suggests: jupyter
 Provides: julia
 Description: High performance programming language for technical computing
  Julia is a high-level, high-performance dynamic programming language for
