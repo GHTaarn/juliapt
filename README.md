@@ -12,8 +12,7 @@ installation because the installation, uninstallation and upgrade process
 becomes similar to other software running on the computer.
 
 If you do not wish to generate the .deb file yourself, but rather download
-a pre-generated .deb file, then visit the
-[juliafromtar](https://github.com/GHTaarn/juliafromtar) project.
+a pre-generated .deb file, then visit https://taarn.srht.site/juliafromtar/README.html
 
 ## Features
 

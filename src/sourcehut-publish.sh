@@ -14,7 +14,8 @@ mkdir -p $reponame/stable
 mv *.deb $reponame/stable
 cd $reponame
 dpkg-scanpackages --multiversion stable /dev/null | gzip -9c > stable/Packages.gz
-tar zcvf ../repo.tar.gz stable
+cat ../packaging-files/srht-README.html | sed s/JULIAVERSION/${NEW_VERSION}/g > README.html
+tar zcvf ../repo.tar.gz stable README.html
 cd ..
 curl --oauth2-bearer `cat srht-pages-key.txt` \
     -Fcontent=@repo.tar.gz \
