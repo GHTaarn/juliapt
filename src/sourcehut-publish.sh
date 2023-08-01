@@ -18,6 +18,6 @@ cat ../packaging-files/srht-README.html | sed s/JULIAVERSION/${NEW_VERSION}/g > 
 tar zcvf ../repo.tar.gz stable README.html
 cd ..
 curl --oauth2-bearer `cat srht-pages-key.txt` \
-    -Fcontent=@repo.tar.gz \
+    -Fcontent=@repo.tar.gz --max-time 600 \
     https://pages.sr.ht/publish/`cat srht-url.txt`
 
