@@ -6,7 +6,8 @@ once every 24 hours, so be prepared to wait this amount of time before new
 Julia versions are available here.
 
 The purpose of this repository is to provide .deb packages containing
-the Julia programming language.
+the latest stable release of the [Julia](https://julialang.org)
+programming language.
 
 ## Installing the .deb packages
 
